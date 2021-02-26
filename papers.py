@@ -6,6 +6,7 @@ import os
 import time
 import papers_update
 
+# TODO: figure out rate of requests that can be made before captcha check initiates
 # first making sure that our local json object is up to date with https://nicholas.carlini.com/writing/2019/all-adversarial-example-papers.html, returning the up to date list
 papers_update.check_update()
 
