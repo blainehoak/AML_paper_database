@@ -3,7 +3,6 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import os
-import time
 import papers_update
 
 # first making sure that our local json object is up to date with https://nicholas.carlini.com/writing/2019/all-adversarial-example-papers.html, returning the up to date list
@@ -29,7 +28,7 @@ for currentpaper in papersj:
     scholarlink = scholarlinklist[0]["href"]
 
     # now moving over to google scholar, need to make sure the requests don't cap out, can only make a request every 10 seconds
-    time.sleep(10)
+    # time.sleep(30)
     scholarreq = requests.get(scholarlink)
     scholarsoup = BeautifulSoup(scholarreq.text, "html.parser")
 
