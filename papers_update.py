@@ -31,10 +31,30 @@ def update(localcopy, webcopy):
     missingcontent = webcopy[:updatelen]
     print("{} new papers available, updating local copy.".format(len(missingcontent)))
 
+    # calculating the relative date in quarters
+    updatedcontent = quartercalc(missingcontent)
     # updating our copy
-    localcopy = missingcontent + localcopy
+    localcopy = updatedcontent + localcopy
 
     with open("advex_papers.json", "w") as fd:
         json.dump(localcopy, fd)
 
     print("Local copy updated :)")
+
+
+def quartercalc(content):
+    counter = 0
+    for paper in content:
+        date = paper[0]
+        splitdate = date.split("-")
+        year = int(splitdate[0])
+        month = int(splitdate[1])
+        # getting the quarter number for that year
+        quarter = int((month - 1) / 3)
+        # four quarters in a year
+        yearquarters = (2021 - year) * 4
+        # assuming we are in 2nd quarter of year 2021
+        totalquarters = yearquarters + (1 - quarter)
+        paper[0] = [date, totalquarters]
+        content[counter] = paper
+    return content

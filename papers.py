@@ -14,7 +14,7 @@ with open("advex_papers.json") as f:
 counter = 0
 # cycling through all the papers
 for currentpaper in papersj:
-    # skipping over the current paper if we already have the citation information
+    # skipping over the current paper if we already have the citation information and quarter information
     if len(currentpaper) == 6:
         continue
     # link is stored in the first element
@@ -28,7 +28,6 @@ for currentpaper in papersj:
     scholarlink = scholarlinklist[0]["href"]
 
     # now moving over to google scholar, need to make sure the requests don't cap out, can only make a request every 10 seconds
-    # time.sleep(30)
     scholarreq = requests.get(scholarlink)
     scholarsoup = BeautifulSoup(scholarreq.text, "html.parser")
 
@@ -53,10 +52,16 @@ for currentpaper in papersj:
     else:
         numcites = 0
 
-    print("{} citations found for {}".format(numcites, currentpaper[2]))
-
+    # now we want to also calculate the number of relative citations, papers that were published longer ago will likely have more citatons
+    relcites = numcites / currentpaper[0][1]
     # appending the number of citations to the end of the json file
-    currentpaper.append(numcites)
+    currentpaper.append([numcites, relcites])
+
+    print(
+        "{} citations ({} relative) found for {}".format(
+            numcites, relcites, currentpaper[2]
+        )
+    )
 
     # storing the citation information back into the papersj array
     papersj[counter] = currentpaper
