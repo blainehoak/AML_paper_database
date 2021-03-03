@@ -36,7 +36,9 @@ for currentpaper in papersj:
     # doing captcha check to make sure we haven't processed too many requests
     captchacheck = scholarsoup.find_all(attrs={"id": "captcha-form"})
 
-    if len(captchacheck) != 0:
+    blockedcheck = scholarsoup.find_all(attrs={"id": "infoDiv0"})
+
+    if len(captchacheck) != 0 or len(blockedcheck) != 0:
         print("Too many requests have been made for this IP address")
         break
 
