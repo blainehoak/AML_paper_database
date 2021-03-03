@@ -11,11 +11,13 @@ papers_update.check_update()
 with open("advex_papers.json") as f:
     papersj = json.load(f)
 
+completed = 0
 counter = 0
 # cycling through all the papers
 for currentpaper in papersj:
     # skipping over the current paper if we already have the citation information and quarter information
     if len(currentpaper) == 6:
+        completed += 1
         continue
     # link is stored in the first element
     arxreq = requests.get(currentpaper[1])
@@ -66,8 +68,12 @@ for currentpaper in papersj:
     # storing the citation information back into the papersj array
     papersj[counter] = currentpaper
     counter += 1
+    completed += 1
     print("Total Papers Checked:", counter)
 
+print(
+    "{} out of {} papers now have citation information".format(completed, len(papersj))
+)
 # dumping the updated array into the json file
 with open("advex_papers.json", "w") as outfile:
     json.dump(papersj, outfile)
