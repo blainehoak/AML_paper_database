@@ -66,7 +66,7 @@ for currentpaper in papersj:
     )
 
     # storing the citation information back into the papersj array
-    papersj[counter] = currentpaper
+    papersj[completed] = currentpaper
     counter += 1
     completed += 1
     print("Total Papers Checked:", counter)
