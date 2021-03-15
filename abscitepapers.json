@@ -1,0 +1,734 @@
+{
+    "6995": [
+        [
+            "2014-12-19",
+            26
+        ],
+        "http://arxiv.org/abs/1412.6572",
+        "Explaining and Harnessing Adversarial Examples.",
+        [
+            "Ian J. Goodfellow",
+            " Jonathon Shlens",
+            " Christian Szegedy"
+        ],
+        "  Several machine learning models, including neural networks, consistently\nmisclassify adversarial examples---inputs formed by applying small but\nintentionally worst-case perturbations to examples from the dataset, such that\nthe perturbed input results in the model outputting an incorrect answer with\nhigh confidence. Early attempts at explaining this phenomenon focused on\nnonlinearity and overfitting. We argue instead that the primary cause of neural\nnetworks' vulnerability to adversarial perturbation is their linear nature.\nThis explanation is supported by new quantitative results while giving the\nfirst explanation of the most intriguing fact about them: their generalization\nacross architectures and training sets. Moreover, this view yields a simple and\nfast method of generating adversarial examples. Using this approach to provide\nexamples for adversarial training, we reduce the test set error of a maxout\nnetwork on the MNIST dataset.\n"
+    ],
+    "6455": [
+        [
+            "2013-12-20",
+            30
+        ],
+        "http://arxiv.org/abs/1312.6199",
+        "Intriguing properties of neural networks.",
+        [
+            "Christian Szegedy",
+            " Wojciech Zaremba",
+            " Ilya Sutskever",
+            " Joan Bruna",
+            " Dumitru Erhan",
+            " Ian Goodfellow",
+            " Rob Fergus"
+        ],
+        "  Deep neural networks are highly expressive models that have recently achieved\nstate of the art performance on speech and visual recognition tasks. While\ntheir expressiveness is the reason they succeed, it also causes them to learn\nuninterpretable solutions that could have counter-intuitive properties. In this\npaper we report two such properties.\n  First, we find that there is no distinction between individual high level\nunits and random linear combinations of high level units, according to various\nmethods of unit analysis. It suggests that it is the space, rather than the\nindividual units, that contains of the semantic information in the high layers\nof neural networks.\n  Second, we find that deep neural networks learn input-output mappings that\nare fairly discontinuous to a significant extend. We can cause the network to\nmisclassify an image by applying a certain imperceptible perturbation, which is\nfound by maximizing the network's prediction error. In addition, the specific\nnature of these perturbations is not a random artifact of learning: the same\nperturbation can cause a different network, that was trained on a different\nsubset of the dataset, to misclassify the same input.\n"
+    ],
+    "5900": [
+        [
+            "2020-07-14",
+            3
+        ],
+        "http://arxiv.org/abs/2007.07236",
+        "Multitask Learning Strengthens Adversarial Robustness.",
+        [
+            "Chengzhi Mao",
+            " Amogh Gupta",
+            " Vikram Nitin",
+            " Baishakhi Ray",
+            " Shuran Song",
+            " Junfeng Yang",
+            " Carl Vondrick"
+        ],
+        "  Although deep networks achieve strong accuracy on a range of computer vision\nbenchmarks, they remain vulnerable to adversarial attacks, where imperceptible\ninput perturbations fool the network. We present both theoretical and empirical\nanalyses that connect the adversarial robustness of a model to the number of\ntasks that it is trained on. Experiments on two datasets show that attack\ndifficulty increases as the number of target tasks increase. Moreover, our\nresults suggest that when models are trained on multiple tasks at once, they\nbecome more robust to adversarial attacks on individual tasks. While\nadversarial defense remains an open challenge, our results suggest that deep\nnetworks are vulnerable partly because they are trained on too few tasks.\n"
+    ],
+    "3237": [
+        [
+            "2016-08-16",
+            19
+        ],
+        "http://arxiv.org/abs/1608.04644",
+        "Towards Evaluating the Robustness of Neural Networks.",
+        [
+            "Nicholas Carlini",
+            " David Wagner"
+        ],
+        "  Neural networks provide state-of-the-art results for most machine learning\ntasks. Unfortunately, neural networks are vulnerable to adversarial examples:\ngiven an input $x$ and any target classification $t$, it is possible to find a\nnew input $x'$ that is similar to $x$ but classified as $t$. This makes it\ndifficult to apply neural networks in security-critical areas. Defensive\ndistillation is a recently proposed approach that can take an arbitrary neural\nnetwork, and increase its robustness, reducing the success rate of current\nattacks' ability to find adversarial examples from $95\\%$ to $0.5\\%$.\n  In this paper, we demonstrate that defensive distillation does not\nsignificantly increase the robustness of neural networks by introducing three\nnew attack algorithms that are successful on both distilled and undistilled\nneural networks with $100\\%$ probability. Our attacks are tailored to three\ndistance metrics used previously in the literature, and when compared to\nprevious adversarial example generation algorithms, our attacks are often much\nmore effective (and never worse). Furthermore, we propose using high-confidence\nadversarial examples in a simple transferability test we show can also be used\nto break defensive distillation. We hope our attacks will be used as a\nbenchmark in future defense attempts to create neural networks that resist\nadversarial examples.\n"
+    ],
+    "2901": [
+        [
+            "2017-06-19",
+            16
+        ],
+        "http://arxiv.org/abs/1706.06083",
+        "Towards Deep Learning Models Resistant to Adversarial Attacks.",
+        [
+            "Aleksander Madry",
+            " Aleksandar Makelov",
+            " Ludwig Schmidt",
+            " Dimitris Tsipras",
+            " Adrian Vladu"
+        ],
+        "  Recent work has demonstrated that deep neural networks are vulnerable to\nadversarial examples---inputs that are almost indistinguishable from natural\ndata and yet classified incorrectly by the network. In fact, some of the latest\nfindings suggest that the existence of adversarial attacks may be an inherent\nweakness of deep learning models. To address this problem, we study the\nadversarial robustness of neural networks through the lens of robust\noptimization. This approach provides us with a broad and unifying view on much\nof the prior work on this topic. Its principled nature also enables us to\nidentify methods for both training and attacking neural networks that are\nreliable and, in a certain sense, universal. In particular, they specify a\nconcrete security guarantee that would protect against any adversary. These\nmethods let us train networks with significantly improved resistance to a wide\nrange of adversarial attacks. They also suggest the notion of security against\na first-order adversary as a natural and broad security guarantee. We believe\nthat robustness against such well-defined classes of adversaries is an\nimportant stepping stone towards fully resistant deep learning models. Code and\npre-trained models are available at https://github.com/MadryLab/mnist_challenge\nand https://github.com/MadryLab/cifar10_challenge.\n"
+    ],
+    "2418": [
+        [
+            "2016-07-08",
+            19
+        ],
+        "http://arxiv.org/abs/1607.02533",
+        "Adversarial examples in the physical world.",
+        [
+            "Alexey Kurakin",
+            " Ian Goodfellow",
+            " Samy Bengio"
+        ],
+        "  Most existing machine learning classifiers are highly vulnerable to\nadversarial examples. An adversarial example is a sample of input data which\nhas been modified very slightly in a way that is intended to cause a machine\nlearning classifier to misclassify it. In many cases, these modifications can\nbe so subtle that a human observer does not even notice the modification at\nall, yet the classifier still makes a mistake. Adversarial examples pose\nsecurity concerns because they could be used to perform an attack on machine\nlearning systems, even if the adversary has no access to the underlying model.\nUp to now, all previous work have assumed a threat model in which the adversary\ncan feed data directly into the machine learning classifier. This is not always\nthe case for systems operating in the physical world, for example those which\nare using signals from cameras and other sensors as an input. This paper shows\nthat even in such physical world scenarios, machine learning systems are\nvulnerable to adversarial examples. We demonstrate this by feeding adversarial\nimages obtained from cell-phone camera to an ImageNet Inception classifier and\nmeasuring the classification accuracy of the system. We find that a large\nfraction of adversarial examples are classified incorrectly even when perceived\nthrough the camera.\n"
+    ],
+    "2214": [
+        [
+            "2015-11-14",
+            22
+        ],
+        "http://arxiv.org/abs/1511.04599",
+        "DeepFool: a simple and accurate method to fool deep neural networks.",
+        [
+            "Seyed-Mohsen Moosavi-Dezfooli",
+            " Alhussein Fawzi",
+            " Pascal Frossard"
+        ],
+        "  State-of-the-art deep neural networks have achieved impressive results on\nmany image classification tasks. However, these same architectures have been\nshown to be unstable to small, well sought, perturbations of the images.\nDespite the importance of this phenomenon, no effective methods have been\nproposed to accurately compute the robustness of state-of-the-art deep\nclassifiers to such perturbations on large-scale datasets. In this paper, we\nfill this gap and propose the DeepFool algorithm to efficiently compute\nperturbations that fool deep networks, and thus reliably quantify the\nrobustness of these classifiers. Extensive experimental results show that our\napproach outperforms recent methods in the task of computing adversarial\nperturbations and making classifiers more robust.\n"
+    ],
+    "2143": [
+        [
+            "2014-12-05",
+            26
+        ],
+        "http://arxiv.org/abs/1412.1897",
+        "Deep Neural Networks are Easily Fooled: High Confidence Predictions for Unrecognizable Images.",
+        [
+            "Anh Nguyen",
+            " Jason Yosinski",
+            " Jeff Clune"
+        ],
+        "  Deep neural networks (DNNs) have recently been achieving state-of-the-art\nperformance on a variety of pattern-recognition tasks, most notably visual\nclassification problems. Given that DNNs are now able to classify objects in\nimages with near-human-level performance, questions naturally arise as to what\ndifferences remain between computer and human vision. A recent study revealed\nthat changing an image (e.g. of a lion) in a way imperceptible to humans can\ncause a DNN to label the image as something else entirely (e.g. mislabeling a\nlion a library). Here we show a related result: it is easy to produce images\nthat are completely unrecognizable to humans, but that state-of-the-art DNNs\nbelieve to be recognizable objects with 99.99% confidence (e.g. labeling with\ncertainty that white noise static is a lion). Specifically, we take\nconvolutional neural networks trained to perform well on either the ImageNet or\nMNIST datasets and then find images with evolutionary algorithms or gradient\nascent that DNNs label with high confidence as belonging to each dataset class.\nIt is possible to produce images totally unrecognizable to human eyes that DNNs\nbelieve with near certainty are familiar objects, which we call \"fooling\nimages\" (more generally, fooling examples). Our results shed light on\ninteresting differences between human vision and current DNNs, and raise\nquestions about the generality of DNN computer vision.\n"
+    ],
+    "2112": [
+        [
+            "2015-11-23",
+            22
+        ],
+        "http://arxiv.org/abs/1511.07528",
+        "The Limitations of Deep Learning in Adversarial Settings.",
+        [
+            "Nicolas Papernot",
+            " Patrick McDaniel",
+            " Somesh Jha",
+            " Matt Fredrikson",
+            " Z. Berkay Celik",
+            " Ananthram Swami"
+        ],
+        "  Deep learning takes advantage of large datasets and computationally efficient\ntraining algorithms to outperform other approaches at various machine learning\ntasks. However, imperfections in the training phase of deep neural networks\nmake them vulnerable to adversarial samples: inputs crafted by adversaries with\nthe intent of causing deep neural networks to misclassify. In this work, we\nformalize the space of adversaries against deep neural networks (DNNs) and\nintroduce a novel class of algorithms to craft adversarial samples based on a\nprecise understanding of the mapping between inputs and outputs of DNNs. In an\napplication to computer vision, we show that our algorithms can reliably\nproduce samples correctly classified by human subjects but misclassified in\nspecific targets by a DNN with a 97% adversarial success rate while only\nmodifying on average 4.02% of the input features per sample. We then evaluate\nthe vulnerability of different sample classes to adversarial perturbations by\ndefining a hardness measure. Finally, we describe preliminary work outlining\ndefenses against adversarial samples by defining a predictive measure of\ndistance between a benign input and a target classification.\n"
+    ],
+    "1700": [
+        [
+            "2015-11-13",
+            22
+        ],
+        "http://arxiv.org/abs/1511.04508",
+        "Distillation as a Defense to Adversarial Perturbations against Deep Neural Networks.",
+        [
+            "Nicolas Papernot",
+            " Patrick McDaniel",
+            " Xi Wu",
+            " Somesh Jha",
+            " Ananthram Swami"
+        ],
+        "  Deep learning algorithms have been shown to perform extremely well on many\nclassical machine learning problems. However, recent studies have shown that\ndeep learning, like other machine learning techniques, is vulnerable to\nadversarial samples: inputs crafted to force a deep neural network (DNN) to\nprovide adversary-selected outputs. Such attacks can seriously undermine the\nsecurity of the system supported by the DNN, sometimes with devastating\nconsequences. For example, autonomous vehicles can be crashed, illicit or\nillegal content can bypass content filters, or biometric authentication systems\ncan be manipulated to allow improper access. In this work, we introduce a\ndefensive mechanism called defensive distillation to reduce the effectiveness\nof adversarial samples on DNNs. We analytically investigate the\ngeneralizability and robustness properties granted by the use of defensive\ndistillation when training DNNs. We also empirically study the effectiveness of\nour defense mechanisms on two DNNs placed in adversarial settings. The study\nshows that defensive distillation can reduce effectiveness of sample creation\nfrom 95% to less than 0.5% on a studied DNN. Such dramatic gains can be\nexplained by the fact that distillation leads gradients used in adversarial\nsample creation to be reduced by a factor of 10^30. We also find that\ndistillation increases the average minimum number of features that need to be\nmodified to create adversarial samples by about 800% on one of the DNNs we\ntested.\n"
+    ],
+    "1664": [
+        [
+            "2016-02-08",
+            21
+        ],
+        "http://arxiv.org/abs/1602.02697",
+        "Practical Black-Box Attacks against Machine Learning.",
+        [
+            "Nicolas Papernot",
+            " Patrick McDaniel",
+            " Ian Goodfellow",
+            " Somesh Jha",
+            " Z. Berkay Celik",
+            " Ananthram Swami"
+        ],
+        "  Machine learning (ML) models, e.g., deep neural networks (DNNs), are\nvulnerable to adversarial examples: malicious inputs modified to yield\nerroneous model outputs, while appearing unmodified to human observers.\nPotential attacks include having malicious content like malware identified as\nlegitimate or controlling vehicle behavior. Yet, all existing adversarial\nexample attacks require knowledge of either the model internals or its training\ndata. We introduce the first practical demonstration of an attacker controlling\na remotely hosted DNN with no such knowledge. Indeed, the only capability of\nour black-box adversary is to observe labels given by the DNN to chosen inputs.\nOur attack strategy consists in training a local model to substitute for the\ntarget DNN, using inputs synthetically generated by an adversary and labeled by\nthe target DNN. We use the local substitute to craft adversarial examples, and\nfind that they are misclassified by the targeted DNN. To perform a real-world\nand properly-blinded evaluation, we attack a DNN hosted by MetaMind, an online\ndeep learning API. We find that their DNN misclassifies 84.24% of the\nadversarial examples crafted with our substitute. We demonstrate the general\napplicability of our strategy to many ML techniques by conducting the same\nattack against models hosted by Amazon and Google, using logistic regression\nsubstitutes. They yield adversarial examples misclassified by Amazon and Google\nat rates of 96.19% and 88.94%. We also find that this black-box attack strategy\nis capable of evading defense strategies previously found to make adversarial\nexample crafting harder.\n"
+    ],
+    "1478": [
+        [
+            "2017-10-25",
+            14
+        ],
+        "http://arxiv.org/abs/1710.09412",
+        "mixup: Beyond Empirical Risk Minimization.",
+        [
+            "Hongyi Zhang",
+            " Moustapha Cisse",
+            " Yann N. Dauphin",
+            " David Lopez-Paz"
+        ],
+        "  Large deep neural networks are powerful, but exhibit undesirable behaviors\nsuch as memorization and sensitivity to adversarial examples. In this work, we\npropose mixup, a simple learning principle to alleviate these issues. In\nessence, mixup trains a neural network on convex combinations of pairs of\nexamples and their labels. By doing so, mixup regularizes the neural network to\nfavor simple linear behavior in-between training examples. Our experiments on\nthe ImageNet-2012, CIFAR-10, CIFAR-100, Google commands and UCI datasets show\nthat mixup improves the generalization of state-of-the-art neural network\narchitectures. We also find that mixup reduces the memorization of corrupt\nlabels, increases the robustness to adversarial examples, and stabilizes the\ntraining of generative adversarial networks.\n"
+    ],
+    "1343": [
+        [
+            "2018-02-01",
+            13
+        ],
+        "http://arxiv.org/abs/1802.00420",
+        "Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples.",
+        [
+            "Anish Athalye",
+            " Nicholas Carlini",
+            " David Wagner"
+        ],
+        "  We identify obfuscated gradients, a kind of gradient masking, as a phenomenon\nthat leads to a false sense of security in defenses against adversarial\nexamples. While defenses that cause obfuscated gradients appear to defeat\niterative optimization-based attacks, we find defenses relying on this effect\ncan be circumvented. We describe characteristic behaviors of defenses\nexhibiting the effect, and for each of the three types of obfuscated gradients\nwe discover, we develop attack techniques to overcome it. In a case study,\nexamining non-certified white-box-secure defenses at ICLR 2018, we find\nobfuscated gradients are a common occurrence, with 7 of 9 defenses relying on\nobfuscated gradients. Our new attacks successfully circumvent 6 completely, and\n1 partially, in the original threat model each paper considers.\n"
+    ],
+    "1334": [
+        [
+            "2016-11-03",
+            18
+        ],
+        "http://arxiv.org/abs/1611.01236",
+        "Adversarial Machine Learning at Scale.",
+        [
+            "Alexey Kurakin",
+            " Ian Goodfellow",
+            " Samy Bengio"
+        ],
+        "  Adversarial examples are malicious inputs designed to fool machine learning\nmodels. They often transfer from one model to another, allowing attackers to\nmount black box attacks without knowledge of the target model's parameters.\nAdversarial training is the process of explicitly training a model on\nadversarial examples, in order to make it more robust to attack or to reduce\nits test error on clean inputs. So far, adversarial training has primarily been\napplied to small problems. In this research, we apply adversarial training to\nImageNet. Our contributions include: (1) recommendations for how to succesfully\nscale adversarial training to large models and datasets, (2) the observation\nthat adversarial training confers robustness to single-step attack methods, (3)\nthe finding that multi-step attack methods are somewhat less transferable than\nsingle-step attack methods, so single-step attacks are the best for mounting\nblack-box attacks, and (4) resolution of a \"label leaking\" effect that causes\nadversarially trained models to perform better on adversarial examples than on\nclean examples, because the adversarial example construction process uses the\ntrue label and the model can learn to exploit regularities in the construction\nprocess.\n"
+    ],
+    "1189": [
+        [
+            "2016-10-26",
+            18
+        ],
+        "http://arxiv.org/abs/1610.08401",
+        "Universal adversarial perturbations.",
+        [
+            "Seyed-Mohsen Moosavi-Dezfooli",
+            " Alhussein Fawzi",
+            " Omar Fawzi",
+            " Pascal Frossard"
+        ],
+        "  Given a state-of-the-art deep neural network classifier, we show the\nexistence of a universal (image-agnostic) and very small perturbation vector\nthat causes natural images to be misclassified with high probability. We\npropose a systematic algorithm for computing universal perturbations, and show\nthat state-of-the-art deep neural networks are highly vulnerable to such\nperturbations, albeit being quasi-imperceptible to the human eye. We further\nempirically analyze these universal perturbations and show, in particular, that\nthey generalize very well across neural networks. The surprising existence of\nuniversal perturbations reveals important geometric correlations among the\nhigh-dimensional decision boundary of classifiers. It further outlines\npotential security breaches with the existence of single directions in the\ninput space that adversaries can possibly exploit to break a classifier on most\nnatural images.\n"
+    ],
+    "1188": [
+        [
+            "2017-05-19",
+            16
+        ],
+        "http://arxiv.org/abs/1705.07204",
+        "Ensemble Adversarial Training: Attacks and Defenses.",
+        [
+            "Florian Tram\u00e8r",
+            " Alexey Kurakin",
+            " Nicolas Papernot",
+            " Ian Goodfellow",
+            " Dan Boneh",
+            " Patrick McDaniel"
+        ],
+        "  Adversarial examples are perturbed inputs designed to fool machine learning\nmodels. Adversarial training injects such examples into training data to\nincrease robustness. To scale this technique to large datasets, perturbations\nare crafted using fast single-step methods that maximize a linear approximation\nof the model's loss. We show that this form of adversarial training converges\nto a degenerate global minimum, wherein small curvature artifacts near the data\npoints obfuscate a linear approximation of the loss. The model thus learns to\ngenerate weak perturbations, rather than defend against strong ones. As a\nresult, we find that adversarial training remains vulnerable to black-box\nattacks, where we transfer perturbations computed on undefended models, as well\nas to a powerful novel single-step attack that escapes the non-smooth vicinity\nof the input data via a small random step. We further introduce Ensemble\nAdversarial Training, a technique that augments training data with\nperturbations transferred from other models. On ImageNet, Ensemble Adversarial\nTraining yields models with strong robustness to black-box attacks. In\nparticular, our most robust model won the first round of the NIPS 2017\ncompetition on Defenses against Adversarial Attacks. However, subsequent work\nfound that more elaborate black-box attacks could significantly enhance\ntransferability and reduce the accuracy of our models.\n"
+    ],
+    "1185": [
+        [
+            "2019-12-02",
+            6
+        ],
+        "http://arxiv.org/abs/1912.01171",
+        "Universal Adversarial Perturbations for CNN Classifiers in EEG-Based BCIs.",
+        [
+            "Zihan Liu",
+            " Xiao Zhang",
+            " Lubin Meng",
+            " Dongrui Wu"
+        ],
+        "  Multiple convolutional neural network (CNN) classifiers have been proposed\nfor electroencephalogram (EEG) based brain-computer interfaces (BCIs). However,\nCNN models have been found vulnerable to universal adversarial perturbations\n(UAPs), which are small and example-independent, yet powerful enough to degrade\nthe performance of a CNN model, when added to a benign example. This paper\nproposes a novel total loss minimization (TLM) approach to generate UAPs for\nEEG-based BCIs. Experimental results demonstrated the effectiveness of TLM on\nthree popular CNN classifiers for both target and non-target attacks. We also\nverified the transferability of UAPs in EEG-based BCI systems. To our\nknowledge, this is the first study on UAPs of CNN classifiers in EEG-based\nBCIs, and also the first study on optimization based UAPs for target attacks.\nUAPs are easy to construct, and can attack BCIs in real-time, exposing a\npotentially critical security concern of BCIs.\n"
+    ],
+    "949": [
+        [
+            "2017-10-24",
+            14
+        ],
+        "http://arxiv.org/abs/1710.08864",
+        "One pixel attack for fooling deep neural networks.",
+        [
+            "Jiawei Su",
+            " Danilo Vasconcellos Vargas",
+            " Sakurai Kouichi"
+        ],
+        "  Recent research has revealed that the output of Deep Neural Networks (DNN)\ncan be easily altered by adding relatively small perturbations to the input\nvector. In this paper, we analyze an attack in an extremely limited scenario\nwhere only one pixel can be modified. For that we propose a novel method for\ngenerating one-pixel adversarial perturbations based on differential evolution\n(DE). It requires less adversarial information (a black-box attack) and can\nfool more types of networks due to the inherent features of DE. The results\nshow that 67.97% of the natural images in Kaggle CIFAR-10 test dataset and\n16.04% of the ImageNet (ILSVRC 2012) test images can be perturbed to at least\none target class by modifying just one pixel with 74.03% and 22.91% confidence\non average. We also show the same vulnerability on the original CIFAR-10\ndataset. Thus, the proposed attack explores a different take on adversarial\nmachine learning in an extreme limited scenario, showing that current DNNs are\nalso vulnerable to such low dimension attacks. Besides, we also illustrate an\nimportant application of DE (or broadly speaking, evolutionary computation) in\nthe domain of adversarial machine learning: creating tools that can effectively\ngenerate low-cost adversarial attacks against neural networks for evaluating\nrobustness.\n"
+    ],
+    "926": [
+        [
+            "2017-05-20",
+            16
+        ],
+        "http://arxiv.org/abs/1705.07263",
+        "Adversarial Examples Are Not Easily Detected: Bypassing Ten Detection Methods.",
+        [
+            "Nicholas Carlini",
+            " David Wagner"
+        ],
+        "  Neural networks are known to be vulnerable to adversarial examples: inputs\nthat are close to natural inputs but classified incorrectly. In order to better\nunderstand the space of adversarial examples, we survey ten recent proposals\nthat are designed for detection and compare their efficacy. We show that all\ncan be defeated by constructing new loss functions. We conclude that\nadversarial examples are significantly harder to detect than previously\nappreciated, and the properties believed to be intrinsic to adversarial\nexamples are in fact not. Finally, we propose several simple guidelines for\nevaluating future proposed defenses.\n"
+    ],
+    "889": [
+        [
+            "2016-05-23",
+            20
+        ],
+        "http://arxiv.org/abs/1605.07277",
+        "Transferability in Machine Learning: from Phenomena to Black-Box Attacks using Adversarial Samples.",
+        [
+            "Nicolas Papernot",
+            " Patrick McDaniel",
+            " Ian Goodfellow"
+        ],
+        "  Many machine learning models are vulnerable to adversarial examples: inputs\nthat are specially crafted to cause a machine learning model to produce an\nincorrect output. Adversarial examples that affect one model often affect\nanother model, even if the two models have different architectures or were\ntrained on different training sets, so long as both models were trained to\nperform the same task. An attacker may therefore train their own substitute\nmodel, craft adversarial examples against the substitute, and transfer them to\na victim model, with very little information about the victim. Recent work has\nfurther developed a technique that uses the victim model as an oracle to label\na synthetic training set for the substitute, so the attacker need not even\ncollect a training set to mount the attack. We extend these recent techniques\nusing reservoir sampling to greatly enhance the efficiency of the training\nprocedure for the substitute model. We introduce new transferability attacks\nbetween previously unexplored (substitute, victim) pairs of machine learning\nmodel classes, most notably SVMs and decision trees. We demonstrate our attacks\non two commercial machine learning classification systems from Amazon (96.19%\nmisclassification rate) and Google (88.94%) using only 800 queries of the\nvictim model, thereby showing that existing machine learning approaches are in\ngeneral vulnerable to systematic black-box attacks regardless of their\nstructure.\n"
+    ],
+    "828": [
+        [
+            "2016-11-08",
+            18
+        ],
+        "http://arxiv.org/abs/1611.02770",
+        "Delving into Transferable Adversarial Examples and Black-box Attacks.",
+        [
+            "Yanpei Liu",
+            " Xinyun Chen",
+            " Chang Liu",
+            " Dawn Song"
+        ],
+        "  An intriguing property of deep neural networks is the existence of\nadversarial examples, which can transfer among different architectures. These\ntransferable adversarial examples may severely hinder deep neural network-based\napplications. Previous works mostly study the transferability using small scale\ndatasets. In this work, we are the first to conduct an extensive study of the\ntransferability over large models and a large scale dataset, and we are also\nthe first to study the transferability of targeted adversarial examples with\ntheir target labels. We study both non-targeted and targeted adversarial\nexamples, and show that while transferable non-targeted adversarial examples\nare easy to find, targeted adversarial examples generated using existing\napproaches almost never transfer with their target labels. Therefore, we\npropose novel ensemble-based approaches to generating transferable adversarial\nexamples. Using such approaches, we observe a large proportion of targeted\nadversarial examples that are able to transfer with their target labels for the\nfirst time. We also present some geometric studies to help understanding the\ntransferable adversarial examples. Finally, we show that the adversarial\nexamples generated using ensemble-based approaches can successfully attack\nClarifai.com, which is a black-box image classification system.\n"
+    ],
+    "817": [
+        [
+            "2017-02-03",
+            17
+        ],
+        "http://arxiv.org/abs/1702.01135",
+        "Reluplex: An Efficient SMT Solver for Verifying Deep Neural Networks.",
+        [
+            "Guy Katz",
+            " Clark Barrett",
+            " David Dill",
+            " Kyle Julian",
+            " Mykel Kochenderfer"
+        ],
+        "  Deep neural networks have emerged as a widely used and effective means for\ntackling complex, real-world problems. However, a major obstacle in applying\nthem to safety-critical systems is the great difficulty in providing formal\nguarantees about their behavior. We present a novel, scalable, and efficient\ntechnique for verifying properties of deep neural networks (or providing\ncounter-examples). The technique is based on the simplex method, extended to\nhandle the non-convex Rectified Linear Unit (ReLU) activation function, which\nis a crucial ingredient in many modern neural networks. The verification\nprocedure tackles neural networks as a whole, without making any simplifying\nassumptions. We evaluated our technique on a prototype deep neural network\nimplementation of the next-generation airborne collision avoidance system for\nunmanned aircraft (ACAS Xu). Results show that our technique can successfully\nprove properties of networks that are an order of magnitude larger than the\nlargest networks verified using existing methods.\n"
+    ],
+    "754": [
+        [
+            "2018-01-02",
+            13
+        ],
+        "http://arxiv.org/abs/1801.00553",
+        "Threat of Adversarial Attacks on Deep Learning in Computer Vision: A Survey.",
+        [
+            "Naveed Akhtar",
+            " Ajmal Mian"
+        ],
+        "  Deep learning is at the heart of the current rise of machine learning and\nartificial intelligence. In the field of Computer Vision, it has become the\nworkhorse for applications ranging from self-driving cars to surveillance and\nsecurity. Whereas deep neural networks have demonstrated phenomenal success\n(often beyond human capabilities) in solving complex problems, recent studies\nshow that they are vulnerable to adversarial attacks in the form of subtle\nperturbations to inputs that lead a model to predict incorrect outputs. For\nimages, such perturbations are often too small to be perceptible, yet they\ncompletely fool the deep learning models. Adversarial attacks pose a serious\nthreat to the success of deep learning in practice. This fact has lead to a\nlarge influx of contributions in this direction. This article presents the\nfirst comprehensive survey on adversarial attacks on deep learning in Computer\nVision. We review the works that design adversarial attacks, analyze the\nexistence of such attacks and propose defenses against them. To emphasize that\nadversarial attacks are possible in practical conditions, we separately review\nthe contributions that evaluate adversarial attacks in the real-world\nscenarios. Finally, we draw on the literature to provide a broader outlook of\nthe research direction.\n"
+    ],
+    "730": [
+        [
+            "2017-08-21",
+            15
+        ],
+        "http://arxiv.org/abs/1708.06131",
+        "Evasion Attacks against Machine Learning at Test Time.",
+        [
+            "Battista Biggio",
+            " Igino Corona",
+            " Davide Maiorca",
+            " Blaine Nelson",
+            " Nedim Srndic",
+            " Pavel Laskov",
+            " Giorgio Giacinto",
+            " Fabio Roli"
+        ],
+        "  In security-sensitive applications, the success of machine learning depends\non a thorough vetting of their resistance to adversarial data. In one\npertinent, well-motivated attack scenario, an adversary may attempt to evade a\ndeployed system at test time by carefully manipulating attack samples. In this\nwork, we present a simple but effective gradient-based approach that can be\nexploited to systematically assess the security of several, widely-used\nclassification algorithms against evasion attacks. Following a recently\nproposed framework for security evaluation, we simulate attack scenarios that\nexhibit different risk levels for the classifier by increasing the attacker's\nknowledge of the system and her ability to manipulate attack samples. This\ngives the classifier designer a better picture of the classifier performance\nunder evasion attacks, and allows him to perform a more informed model\nselection (or parameter setting). We evaluate our approach on the relevant\nsecurity task of malware detection in PDF files, and show that such systems can\nbe easily evaded. We also sketch some countermeasures suggested by our\nanalysis.\n"
+    ],
+    "729": [
+        [
+            "2017-07-24",
+            15
+        ],
+        "http://arxiv.org/abs/1707.07397",
+        "Synthesizing Robust Adversarial Examples.",
+        [
+            "Anish Athalye",
+            " Logan Engstrom",
+            " Andrew Ilyas",
+            " Kevin Kwok"
+        ],
+        "  Standard methods for generating adversarial examples for neural networks do\nnot consistently fool neural network classifiers in the physical world due to a\ncombination of viewpoint shifts, camera noise, and other natural\ntransformations, limiting their relevance to real-world systems. We demonstrate\nthe existence of robust 3D adversarial objects, and we present the first\nalgorithm for synthesizing examples that are adversarial over a chosen\ndistribution of transformations. We synthesize two-dimensional adversarial\nimages that are robust to noise, distortion, and affine transformation. We\napply our algorithm to complex three-dimensional objects, using 3D-printing to\nmanufacture the first physical adversarial objects. Our results demonstrate the\nexistence of 3D adversarial objects in the physical world.\n"
+    ],
+    "718": [
+        [
+            "2017-07-23",
+            15
+        ],
+        "http://arxiv.org/abs/1707.07328",
+        "Adversarial Examples for Evaluating Reading Comprehension Systems.",
+        [
+            "Robin Jia",
+            " Percy Liang"
+        ],
+        "  Standard accuracy metrics indicate that reading comprehension systems are\nmaking rapid progress, but the extent to which these systems truly understand\nlanguage remains unclear. To reward systems with real language understanding\nabilities, we propose an adversarial evaluation scheme for the Stanford\nQuestion Answering Dataset (SQuAD). Our method tests whether systems can answer\nquestions about paragraphs that contain adversarially inserted sentences, which\nare automatically generated to distract computer systems without changing the\ncorrect answer or misleading humans. In this adversarial setting, the accuracy\nof sixteen published models drops from an average of $75\\%$ F1 score to $36\\%$;\nwhen the adversary is allowed to add ungrammatical sequences of words, average\naccuracy on four models decreases further to $7\\%$. We hope our insights will\nmotivate the development of new models that understand language more precisely.\n"
+    ],
+    "716": [
+        [
+            "2017-04-04",
+            16
+        ],
+        "http://arxiv.org/abs/1704.01155",
+        "Feature Squeezing: Detecting Adversarial Examples in Deep Neural Networks.",
+        [
+            "Weilin Xu",
+            " David Evans",
+            " Yanjun Qi"
+        ],
+        "  Although deep neural networks (DNNs) have achieved great success in many\ntasks, they can often be fooled by \\emph{adversarial examples} that are\ngenerated by adding small but purposeful distortions to natural examples.\nPrevious studies to defend against adversarial examples mostly focused on\nrefining the DNN models, but have either shown limited success or required\nexpensive computation. We propose a new strategy, \\emph{feature squeezing},\nthat can be used to harden DNN models by detecting adversarial examples.\nFeature squeezing reduces the search space available to an adversary by\ncoalescing samples that correspond to many different feature vectors in the\noriginal space into a single sample. By comparing a DNN model's prediction on\nthe original input with that on squeezed inputs, feature squeezing detects\nadversarial examples with high accuracy and few false positives. This paper\nexplores two feature squeezing methods: reducing the color bit depth of each\npixel and spatial smoothing. These simple strategies are inexpensive and\ncomplementary to other defenses, and can be combined in a joint detection\nframework to achieve high detection rates against state-of-the-art attacks.\n"
+    ],
+    "672": [
+        [
+            "2017-12-19",
+            14
+        ],
+        "http://arxiv.org/abs/1712.07107",
+        "Adversarial Examples: Attacks and Defenses for Deep Learning.",
+        [
+            "Xiaoyong Yuan",
+            " Pan He",
+            " Qile Zhu",
+            " Xiaolin Li"
+        ],
+        "  With rapid progress and significant successes in a wide spectrum of\napplications, deep learning is being applied in many safety-critical\nenvironments. However, deep neural networks have been recently found vulnerable\nto well-designed input samples, called adversarial examples. Adversarial\nexamples are imperceptible to human but can easily fool deep neural networks in\nthe testing/deploying stage. The vulnerability to adversarial examples becomes\none of the major risks for applying deep neural networks in safety-critical\nenvironments. Therefore, attacks and defenses on adversarial examples draw\ngreat attention. In this paper, we review recent findings on adversarial\nexamples for deep neural networks, summarize the methods for generating\nadversarial examples, and propose a taxonomy of these methods. Under the\ntaxonomy, applications for adversarial examples are investigated. We further\nelaborate on countermeasures for adversarial examples and explore the\nchallenges and the potential solutions.\n"
+    ],
+    "639": [
+        [
+            "2017-10-17",
+            14
+        ],
+        "http://arxiv.org/abs/1710.06081",
+        "Boosting Adversarial Attacks with Momentum.",
+        [
+            "Yinpeng Dong",
+            " Fangzhou Liao",
+            " Tianyu Pang",
+            " Hang Su",
+            " Jun Zhu",
+            " Xiaolin Hu",
+            " Jianguo Li"
+        ],
+        "  Deep neural networks are vulnerable to adversarial examples, which poses\nsecurity concerns on these algorithms due to the potentially severe\nconsequences. Adversarial attacks serve as an important surrogate to evaluate\nthe robustness of deep learning models before they are deployed. However, most\nof existing adversarial attacks can only fool a black-box model with a low\nsuccess rate. To address this issue, we propose a broad class of momentum-based\niterative algorithms to boost adversarial attacks. By integrating the momentum\nterm into the iterative process for attacks, our methods can stabilize update\ndirections and escape from poor local maxima during the iterations, resulting\nin more transferable adversarial examples. To further improve the success rates\nfor black-box attacks, we apply momentum iterative algorithms to an ensemble of\nmodels, and show that the adversarially trained models with a strong defense\nability are also vulnerable to our black-box attacks. We hope that the proposed\nmethods will serve as a benchmark for evaluating the robustness of various deep\nmodels and defense methods. With this method, we won the first places in NIPS\n2017 Non-targeted Adversarial Attack and Targeted Adversarial Attack\ncompetitions.\n"
+    ],
+    "604": [
+        [
+            "2017-08-13",
+            15
+        ],
+        "http://arxiv.org/abs/1708.03999",
+        "ZOO: Zeroth Order Optimization based Black-box Attacks to Deep Neural Networks without Training Substitute Models.",
+        [
+            "Pin-Yu Chen",
+            " Huan Zhang",
+            " Yash Sharma",
+            " Jinfeng Yi",
+            " Cho-Jui Hsieh"
+        ],
+        "  Deep neural networks (DNNs) are one of the most prominent technologies of our\ntime, as they achieve state-of-the-art performance in many machine learning\ntasks, including but not limited to image classification, text mining, and\nspeech processing. However, recent research on DNNs has indicated\never-increasing concern on the robustness to adversarial examples, especially\nfor security-critical tasks such as traffic sign identification for autonomous\ndriving. Studies have unveiled the vulnerability of a well-trained DNN by\ndemonstrating the ability of generating barely noticeable (to both human and\nmachines) adversarial images that lead to misclassification. Furthermore,\nresearchers have shown that these adversarial images are highly transferable by\nsimply training and attacking a substitute model built upon the target model,\nknown as a black-box attack to DNNs.\n  Similar to the setting of training substitute models, in this paper we\npropose an effective black-box attack that also only has access to the input\n(images) and the output (confidence scores) of a targeted DNN. However,\ndifferent from leveraging attack transferability from substitute models, we\npropose zeroth order optimization (ZOO) based attacks to directly estimate the\ngradients of the targeted DNN for generating adversarial examples. We use\nzeroth order stochastic coordinate descent along with dimension reduction,\nhierarchical attack and importance sampling techniques to efficiently attack\nblack-box models. By exploiting zeroth order optimization, improved attacks to\nthe targeted DNN can be accomplished, sparing the need for training substitute\nmodels and avoiding the loss in attack transferability. Experimental results on\nMNIST, CIFAR10 and ImageNet show that the proposed ZOO attack is as effective\nas the state-of-the-art white-box attack and significantly outperforms existing\nblack-box attacks via substitute models.\n"
+    ],
+    "588": [
+        [
+            "2017-05-25",
+            16
+        ],
+        "http://arxiv.org/abs/1705.09064",
+        "MagNet: a Two-Pronged Defense against Adversarial Examples.",
+        [
+            "Dongyu Meng",
+            " Hao Chen"
+        ],
+        "  Deep learning has shown promising results on hard perceptual problems in\nrecent years. However, deep learning systems are found to be vulnerable to\nsmall adversarial perturbations that are nearly imperceptible to human. Such\nspecially crafted perturbations cause deep learning systems to output incorrect\ndecisions, with potentially disastrous consequences. These vulnerabilities\nhinder the deployment of deep learning systems where safety or security is\nimportant. Attempts to secure deep learning systems either target specific\nattacks or have been shown to be ineffective.\n  In this paper, we propose MagNet, a framework for defending neural network\nclassifiers against adversarial examples. MagNet does not modify the protected\nclassifier or know the process for generating adversarial examples. MagNet\nincludes one or more separate detector networks and a reformer network.\nDifferent from previous work, MagNet learns to differentiate between normal and\nadversarial examples by approximating the manifold of normal examples. Since it\ndoes not rely on any process for generating adversarial examples, it has\nsubstantial generalization power. Moreover, MagNet reconstructs adversarial\nexamples by moving them towards the manifold, which is effective for helping\nclassify adversarial examples with small perturbation correctly. We discuss the\nintrinsic difficulty in defending against whitebox attack and propose a\nmechanism to defend against graybox attack. Inspired by the use of randomness\nin cryptography, we propose to use diversity to strengthen MagNet. We show\nempirically that MagNet is effective against most advanced state-of-the-art\nattacks in blackbox and graybox scenarios while keeping false positive rate on\nnormal examples very low.\n"
+    ],
+    "583": [
+        [
+            "2017-05-18",
+            16
+        ],
+        "http://arxiv.org/abs/1705.06640",
+        "DeepXplore: Automated Whitebox Testing of Deep Learning Systems.",
+        [
+            "Kexin Pei",
+            " Yinzhi Cao",
+            " Junfeng Yang",
+            " Suman Jana"
+        ],
+        "  Deep learning (DL) systems are increasingly deployed in safety- and\nsecurity-critical domains including self-driving cars and malware detection,\nwhere the correctness and predictability of a system's behavior for corner case\ninputs are of great importance. Existing DL testing depends heavily on manually\nlabeled data and therefore often fails to expose erroneous behaviors for rare\ninputs.\n  We design, implement, and evaluate DeepXplore, the first whitebox framework\nfor systematically testing real-world DL systems. First, we introduce neuron\ncoverage for systematically measuring the parts of a DL system exercised by\ntest inputs. Next, we leverage multiple DL systems with similar functionality\nas cross-referencing oracles to avoid manual checking. Finally, we demonstrate\nhow finding inputs for DL systems that both trigger many differential behaviors\nand achieve high neuron coverage can be represented as a joint optimization\nproblem and solved efficiently using gradient-based search techniques.\n  DeepXplore efficiently finds thousands of incorrect corner case behaviors\n(e.g., self-driving cars crashing into guard rails and malware masquerading as\nbenign software) in state-of-the-art DL models with thousands of neurons\ntrained on five popular datasets including ImageNet and Udacity self-driving\nchallenge data. For all tested DL models, on average, DeepXplore generated one\ntest input demonstrating incorrect behavior within one second while running\nonly on a commodity laptop. We further show that the test inputs generated by\nDeepXplore can also be used to retrain the corresponding DL model to improve\nthe model's accuracy by up to 3%.\n"
+    ],
+    "573": [
+        [
+            "2017-08-28",
+            15
+        ],
+        "http://arxiv.org/abs/1708.08559",
+        "DeepTest: Automated Testing of Deep-Neural-Network-driven Autonomous Cars.",
+        [
+            "Yuchi Tian",
+            " Kexin Pei",
+            " Suman Jana",
+            " Baishakhi Ray"
+        ],
+        "  Recent advances in Deep Neural Networks (DNNs) have led to the development of\nDNN-driven autonomous cars that, using sensors like camera, LiDAR, etc., can\ndrive without any human intervention. Most major manufacturers including Tesla,\nGM, Ford, BMW, and Waymo/Google are working on building and testing different\ntypes of autonomous vehicles. The lawmakers of several US states including\nCalifornia, Texas, and New York have passed new legislation to fast-track the\nprocess of testing and deployment of autonomous vehicles on their roads.\n  However, despite their spectacular progress, DNNs, just like traditional\nsoftware, often demonstrate incorrect or unexpected corner case behaviors that\ncan lead to potentially fatal collisions. Several such real-world accidents\ninvolving autonomous cars have already happened including one which resulted in\na fatality. Most existing testing techniques for DNN-driven vehicles are\nheavily dependent on the manual collection of test data under different driving\nconditions which become prohibitively expensive as the number of test\nconditions increases.\n  In this paper, we design, implement and evaluate DeepTest, a systematic\ntesting tool for automatically detecting erroneous behaviors of DNN-driven\nvehicles that can potentially lead to fatal crashes. First, our tool is\ndesigned to automatically generated test cases leveraging real-world changes in\ndriving conditions like rain, fog, lighting conditions, etc. DeepTest\nsystematically explores different parts of the DNN logic by generating test\ninputs that maximize the numbers of activated neurons. DeepTest found thousands\nof erroneous behaviors under different realistic driving conditions (e.g.,\nblurring, rain, fog, etc.) many of which lead to potentially fatal crashes in\nthree top performing DNNs in the Udacity self-driving car challenge.\n"
+    ],
+    "567": [
+        [
+            "2018-05-17",
+            12
+        ],
+        "http://arxiv.org/abs/1805.06605",
+        "Defense-GAN: Protecting Classifiers Against Adversarial Attacks Using Generative Models.",
+        [
+            "Pouya Samangouei",
+            " Maya Kabkab",
+            " Rama Chellappa"
+        ],
+        "  In recent years, deep neural network approaches have been widely adopted for\nmachine learning tasks, including classification. However, they were shown to\nbe vulnerable to adversarial perturbations: carefully crafted small\nperturbations can cause misclassification of legitimate images. We propose\nDefense-GAN, a new framework leveraging the expressive capability of generative\nmodels to defend deep neural networks against such attacks. Defense-GAN is\ntrained to model the distribution of unperturbed images. At inference time, it\nfinds a close output to a given image which does not contain the adversarial\nchanges. This output is then fed to the classifier. Our proposed method can be\nused with any classification model and does not modify the classifier structure\nor training procedure. It can also be used as a defense against any attack as\nit does not assume knowledge of the process for generating the adversarial\nexamples. We empirically show that Defense-GAN is consistently effective\nagainst different attack methods and improves on existing defense strategies.\nOur code has been made publicly available at\nhttps://github.com/kabkabm/defensegan\n"
+    ],
+    "563": [
+        [
+            "2017-10-31",
+            14
+        ],
+        "http://arxiv.org/abs/1711.00117",
+        "Countering Adversarial Images using Input Transformations.",
+        [
+            "Chuan Guo",
+            " Mayank Rana",
+            " Moustapha Cisse",
+            " der Maaten Laurens van"
+        ],
+        "  This paper investigates strategies that defend against adversarial-example\nattacks on image-classification systems by transforming the inputs before\nfeeding them to the system. Specifically, we study applying image\ntransformations such as bit-depth reduction, JPEG compression, total variance\nminimization, and image quilting before feeding the image to a convolutional\nnetwork classifier. Our experiments on ImageNet show that total variance\nminimization and image quilting are very effective defenses in practice, in\nparticular, when the network is trained on transformed images. The strength of\nthose defenses lies in their non-differentiable nature and their inherent\nrandomness, which makes it difficult for an adversary to circumvent the\ndefenses. Our best defense eliminates 60% of strong gray-box and 90% of strong\nblack-box attacks by a variety of major attack methods\n"
+    ],
+    "550": [
+        [
+            "2017-11-02",
+            14
+        ],
+        "http://arxiv.org/abs/1711.00851",
+        "Provable defenses against adversarial examples via the convex outer adversarial polytope.",
+        [
+            "Eric Wong",
+            " J. Zico Kolter"
+        ],
+        "  We propose a method to learn deep ReLU-based classifiers that are provably\nrobust against norm-bounded adversarial perturbations on the training data. For\npreviously unseen examples, the approach is guaranteed to detect all\nadversarial examples, though it may flag some non-adversarial examples as well.\nThe basic idea is to consider a convex outer approximation of the set of\nactivations reachable through a norm-bounded perturbation, and we develop a\nrobust optimization procedure that minimizes the worst case loss over this\nouter region (via a linear program). Crucially, we show that the dual problem\nto this linear program can be represented itself as a deep network similar to\nthe backpropagation network, leading to very efficient optimization approaches\nthat produce guaranteed bounds on the robust loss. The end result is that by\nexecuting a few more forward and backward passes through a slightly modified\nversion of the original network (though possibly with much larger batch sizes),\nwe can learn a classifier that is provably robust to any norm-bounded\nadversarial attack. We illustrate the approach on a number of tasks to train\nclassifiers with robust adversarial guarantees (e.g. for MNIST, we produce a\nconvolutional classifier that provably has less than 5.8% test error for any\nadversarial attack with bounded $\\ell_\\infty$ norm less than $\\epsilon = 0.1$),\nand code for all experiments in the paper is available at\nhttps://github.com/locuslab/convex_adversarial.\n"
+    ],
+    "536": [
+        [
+            "2016-10-21",
+            18
+        ],
+        "http://arxiv.org/abs/1610.06940",
+        "Safety Verification of Deep Neural Networks.",
+        [
+            "Xiaowei Huang",
+            " Marta Kwiatkowska",
+            " Sen Wang",
+            " Min Wu"
+        ],
+        "  Deep neural networks have achieved impressive experimental results in image\nclassification, but can surprisingly be unstable with respect to adversarial\nperturbations, that is, minimal changes to the input image that cause the\nnetwork to misclassify it. With potential applications including perception\nmodules and end-to-end controllers for self-driving cars, this raises concerns\nabout their safety. We develop a novel automated verification framework for\nfeed-forward multi-layer neural networks based on Satisfiability Modulo Theory\n(SMT). We focus on safety of image classification decisions with respect to\nimage manipulations, such as scratches or changes to camera angle or lighting\nconditions that would result in the same class being assigned by a human, and\ndefine safety for an individual decision in terms of invariance of the\nclassification within a small neighbourhood of the original image. We enable\nexhaustive search of the region by employing discretisation, and propagate the\nanalysis layer by layer. Our method works directly with the network code and,\nin contrast to existing methods, can guarantee that adversarial examples, if\nthey exist, are found for the given region and family of manipulations. If\nfound, adversarial examples can be shown to human testers and/or used to\nfine-tune the network. We implement the techniques using Z3 and evaluate them\non state-of-the-art networks, including regularised and deep learning networks.\nWe also compare against existing techniques to search for adversarial examples\nand estimate network robustness.\n"
+    ],
+    "535": [
+        [
+            "2014-12-11",
+            26
+        ],
+        "http://arxiv.org/abs/1412.5068",
+        "Towards Deep Neural Network Architectures Robust to Adversarial Examples.",
+        [
+            "Shixiang Gu",
+            " Luca Rigazio"
+        ],
+        "  Recent work has shown deep neural networks (DNNs) to be highly susceptible to\nwell-designed, small perturbations at the input layer, or so-called adversarial\nexamples. Taking images as an example, such distortions are often\nimperceptible, but can result in 100% mis-classification for a state of the art\nDNN. We study the structure of adversarial examples and explore network\ntopology, pre-processing and training strategies to improve the robustness of\nDNNs. We perform various experiments to assess the removability of adversarial\nexamples by corrupting with additional noise and pre-processing with denoising\nautoencoders (DAEs). We find that DAEs can remove substantial amounts of the\nadversarial noise. How- ever, when stacking the DAE with the original DNN, the\nresulting network can again be attacked by new adversarial examples with even\nsmaller distortion. As a solution, we propose Deep Contractive Network, a model\nwith a new end-to-end training procedure that includes a smoothness penalty\ninspired by the contractive autoencoder (CAE). This increases the network\nrobustness to adversarial examples, without a significant performance penalty.\n"
+    ],
+    "532": [
+        [
+            "2017-02-14",
+            17
+        ],
+        "http://arxiv.org/abs/1702.04267",
+        "On Detecting Adversarial Perturbations.",
+        [
+            "Jan Hendrik Metzen",
+            " Tim Genewein",
+            " Volker Fischer",
+            " Bastian Bischoff"
+        ],
+        "  Machine learning and deep learning in particular has advanced tremendously on\nperceptual tasks in recent years. However, it remains vulnerable against\nadversarial perturbations of the input that have been crafted specifically to\nfool the system while being quasi-imperceptible to a human. In this work, we\npropose to augment deep neural networks with a small \"detector\" subnetwork\nwhich is trained on the binary classification task of distinguishing genuine\ndata from data containing adversarial perturbations. Our method is orthogonal\nto prior work on addressing adversarial perturbations, which has mostly focused\non making the classification network itself more robust. We show empirically\nthat adversarial perturbations can be detected surprisingly well even though\nthey are quasi-imperceptible to humans. Moreover, while the detectors have been\ntrained to detect only a specific adversary, they generalize to similar and\nweaker adversaries. In addition, we propose an adversarial attack that fools\nboth the classifier and the detector and a novel training procedure for the\ndetector that counteracts this attack.\n"
+    ],
+    "530": [
+        [
+            "2017-12-08",
+            14
+        ],
+        "http://arxiv.org/abs/1712.03141",
+        "Wild Patterns: Ten Years After the Rise of Adversarial Machine Learning.",
+        [
+            "Battista Biggio",
+            " Fabio Roli"
+        ],
+        "  Learning-based pattern classifiers, including deep networks, have shown\nimpressive performance in several application domains, ranging from computer\nvision to cybersecurity. However, it has also been shown that adversarial input\nperturbations carefully crafted either at training or at test time can easily\nsubvert their predictions. The vulnerability of machine learning to such wild\npatterns (also referred to as adversarial examples), along with the design of\nsuitable countermeasures, have been investigated in the research field of\nadversarial machine learning. In this work, we provide a thorough overview of\nthe evolution of this research area over the last ten years and beyond,\nstarting from pioneering, earlier work on the security of non-deep learning\nalgorithms up to more recent work aimed to understand the security properties\nof deep learning algorithms, in the context of computer vision and\ncybersecurity tasks. We report interesting connections between these\napparently-different lines of work, highlighting common misconceptions related\nto the security evaluation of machine-learning algorithms. We review the main\nthreat models and attacks defined to this end, and discuss the main limitations\nof current work, along with the corresponding future challenges towards the\ndesign of more secure learning algorithms.\n"
+    ],
+    "528": [
+        [
+            "2016-12-01",
+            18
+        ],
+        "http://arxiv.org/abs/1612.00410",
+        "Deep Variational Information Bottleneck.",
+        [
+            "Alexander A. Alemi",
+            " Ian Fischer",
+            " Joshua V. Dillon",
+            " Kevin Murphy"
+        ],
+        "  We present a variational approximation to the information bottleneck of\nTishby et al. (1999). This variational approach allows us to parameterize the\ninformation bottleneck model using a neural network and leverage the\nreparameterization trick for efficient training. We call this method \"Deep\nVariational Information Bottleneck\", or Deep VIB. We show that models trained\nwith the VIB objective outperform those that are trained with other forms of\nregularization, in terms of generalization performance and robustness to\nadversarial attack.\n"
+    ],
+    "518": [
+        [
+            "2018-01-05",
+            13
+        ],
+        "http://arxiv.org/abs/1801.01944",
+        "Audio Adversarial Examples: Targeted Attacks on Speech-to-Text.",
+        [
+            "Nicholas Carlini",
+            " David Wagner"
+        ],
+        "  We construct targeted audio adversarial examples on automatic speech\nrecognition. Given any audio waveform, we can produce another that is over\n99.9% similar, but transcribes as any phrase we choose (recognizing up to 50\ncharacters per second of audio). We apply our white-box iterative\noptimization-based attack to Mozilla's implementation DeepSpeech end-to-end,\nand show it has a 100% success rate. The feasibility of this attack introduce a\nnew domain to study adversarial examples.\n"
+    ],
+    "489": [
+        [
+            "2018-01-28",
+            13
+        ],
+        "http://arxiv.org/abs/1801.09344",
+        "Certified Defenses against Adversarial Examples.",
+        [
+            "Aditi Raghunathan",
+            " Jacob Steinhardt",
+            " Percy Liang"
+        ],
+        "  While neural networks have achieved high accuracy on standard image\nclassification benchmarks, their accuracy drops to nearly zero in the presence\nof small adversarial perturbations to test inputs. Defenses based on\nregularization and adversarial training have been proposed, but often followed\nby new, stronger attacks that defeat these defenses. Can we somehow end this\narms race? In this work, we study this problem for neural networks with one\nhidden layer. We first propose a method based on a semidefinite relaxation that\noutputs a certificate that for a given network and test input, no attack can\nforce the error to exceed a certain value. Second, as this certificate is\ndifferentiable, we jointly optimize it with the network parameters, providing\nan adaptive regularizer that encourages robustness against all attacks. On\nMNIST, our approach produces a network and a certificate that no attack that\nperturbs each pixel by at most \\epsilon = 0.1 can cause more than 35% test\nerror.\n"
+    ],
+    "475": [
+        [
+            "2018-05-30",
+            12
+        ],
+        "http://arxiv.org/abs/1805.12152",
+        "Robustness May Be at Odds with Accuracy.",
+        [
+            "Dimitris Tsipras",
+            " Shibani Santurkar",
+            " Logan Engstrom",
+            " Alexander Turner",
+            " Aleksander Madry"
+        ],
+        "  We show that there may exist an inherent tension between the goal of\nadversarial robustness and that of standard generalization. Specifically,\ntraining robust models may not only be more resource-consuming, but also lead\nto a reduction of standard accuracy. We demonstrate that this trade-off between\nthe standard accuracy of a model and its robustness to adversarial\nperturbations provably exists in a fairly simple and natural setting. These\nfindings also corroborate a similar phenomenon observed empirically in more\ncomplex settings. Further, we argue that this phenomenon is a consequence of\nrobust classifiers learning fundamentally different feature representations\nthan standard classifiers. These differences, in particular, seem to result in\nunexpected benefits: the representations learned by robust models tend to align\nbetter with salient data characteristics and human perception.\n"
+    ],
+    "457": [
+        [
+            "2017-12-12",
+            14
+        ],
+        "http://arxiv.org/abs/1712.04248",
+        "Decision-Based Adversarial Attacks: Reliable Attacks Against Black-Box Machine Learning Models.",
+        [
+            "Wieland Brendel",
+            " Jonas Rauber",
+            " Matthias Bethge"
+        ],
+        "  Many machine learning algorithms are vulnerable to almost imperceptible\nperturbations of their inputs. So far it was unclear how much risk adversarial\nperturbations carry for the safety of real-world machine learning applications\nbecause most methods used to generate such perturbations rely either on\ndetailed model information (gradient-based attacks) or on confidence scores\nsuch as class probabilities (score-based attacks), neither of which are\navailable in most real-world scenarios. In many such cases one currently needs\nto retreat to transfer-based attacks which rely on cumbersome substitute\nmodels, need access to the training data and can be defended against. Here we\nemphasise the importance of attacks which solely rely on the final model\ndecision. Such decision-based attacks are (1) applicable to real-world\nblack-box models such as autonomous cars, (2) need less knowledge and are\neasier to apply than transfer-based attacks and (3) are more robust to simple\ndefences than gradient- or score-based attacks. Previous attacks in this\ncategory were limited to simple models or simple datasets. Here we introduce\nthe Boundary Attack, a decision-based attack that starts from a large\nadversarial perturbation and then seeks to reduce the perturbation while\nstaying adversarial. The attack is conceptually simple, requires close to no\nhyperparameter tuning, does not rely on substitute models and is competitive\nwith the best gradient-based attacks in standard computer vision tasks like\nImageNet. We apply the attack on two black-box algorithms from Clarifai.com.\nThe Boundary Attack in particular and the class of decision-based attacks in\ngeneral open new avenues to study the robustness of machine learning models and\nraise new questions regarding the safety of deployed machine learning systems.\nAn implementation of the attack is available as part of Foolbox at\nhttps://github.com/bethgelab/foolbox .\n"
+    ],
+    "451": [
+        [
+            "2019-05-06",
+            8
+        ],
+        "http://arxiv.org/abs/1905.02175",
+        "Adversarial Examples Are Not Bugs, They Are Features.",
+        [
+            "Andrew Ilyas",
+            " Shibani Santurkar",
+            " Dimitris Tsipras",
+            " Logan Engstrom",
+            " Brandon Tran",
+            " Aleksander Madry"
+        ],
+        "  Adversarial examples have attracted significant attention in machine\nlearning, but the reasons for their existence and pervasiveness remain unclear.\nWe demonstrate that adversarial examples can be directly attributed to the\npresence of non-robust features: features derived from patterns in the data\ndistribution that are highly predictive, yet brittle and incomprehensible to\nhumans. After capturing these features within a theoretical framework, we\nestablish their widespread existence in standard datasets. Finally, we present\na simple setting where we can rigorously tie the phenomena we observe in\npractice to a misalignment between the (human-specified) notion of robustness\nand the inherent geometry of the data.\n"
+    ],
+    "447": [
+        [
+            "2018-07-04",
+            11
+        ],
+        "http://arxiv.org/abs/1807.01697",
+        "Benchmarking Neural Network Robustness to Common Corruptions and Surface Variations.",
+        [
+            "Dan Hendrycks",
+            " Thomas G. Dietterich"
+        ],
+        "  In this paper we establish rigorous benchmarks for image classifier\nrobustness. Our first benchmark, ImageNet-C, standardizes and expands the\ncorruption robustness topic, while showing which classifiers are preferable in\nsafety-critical applications. Unlike recent robustness research, this benchmark\nevaluates performance on commonplace corruptions not worst-case adversarial\ncorruptions. We find that there are negligible changes in relative corruption\nrobustness from AlexNet to ResNet classifiers, and we discover ways to enhance\ncorruption robustness. Then we propose a new dataset called Icons-50 which\nopens research on a new kind of robustness, surface variation robustness. With\nthis dataset we evaluate the frailty of classifiers on new styles of known\nobjects and unexpected instances of known classes. We also demonstrate two\nmethods that improve surface variation robustness. Together our benchmarks may\naid future work toward networks that learn fundamental class structure and also\nrobustly generalize.\n"
+    ],
+    "443": [
+        [
+            "2019-01-24",
+            9
+        ],
+        "http://arxiv.org/abs/1901.08573",
+        "Theoretically Principled Trade-off between Robustness and Accuracy.",
+        [
+            "Hongyang Zhang",
+            " Yaodong Yu",
+            " Jiantao Jiao",
+            " Eric P. Xing",
+            " Laurent El Ghaoui",
+            " Michael I. Jordan"
+        ],
+        "  We identify a trade-off between robustness and accuracy that serves as a\nguiding principle in the design of defenses against adversarial examples.\nAlthough this problem has been widely studied empirically, much remains unknown\nconcerning the theory underlying this trade-off. In this work, we decompose the\nprediction error for adversarial examples (robust error) as the sum of the\nnatural (classification) error and boundary error, and provide a differentiable\nupper bound using the theory of classification-calibrated loss, which is shown\nto be the tightest possible upper bound uniform over all probability\ndistributions and measurable predictors. Inspired by our theoretical analysis,\nwe also design a new defense method, TRADES, to trade adversarial robustness\noff against accuracy. Our proposed algorithm performs well experimentally in\nreal-world datasets. The methodology is the foundation of our entry to the\nNeurIPS 2018 Adversarial Vision Challenge in which we won the 1st place out of\n~2,000 submissions, surpassing the runner-up approach by $11.41\\%$ in terms of\nmean $\\ell_2$ perturbation distance.\n"
+    ],
+    "430": [
+        [
+            "2017-04-28",
+            16
+        ],
+        "http://arxiv.org/abs/1704.08847",
+        "Parseval Networks: Improving Robustness to Adversarial Examples.",
+        [
+            "Moustapha Cisse",
+            " Piotr Bojanowski",
+            " Edouard Grave",
+            " Yann Dauphin",
+            " Nicolas Usunier"
+        ],
+        "  We introduce Parseval networks, a form of deep neural networks in which the\nLipschitz constant of linear, convolutional and aggregation layers is\nconstrained to be smaller than 1. Parseval networks are empirically and\ntheoretically motivated by an analysis of the robustness of the predictions\nmade by deep neural networks when their input is subject to an adversarial\nperturbation. The most important feature of Parseval networks is to maintain\nweight matrices of linear and convolutional layers to be (approximately)\nParseval tight frames, which are extensions of orthogonal matrices to\nnon-square matrices. We describe how these constraints can be maintained\nefficiently during SGD. We show that Parseval networks match the\nstate-of-the-art in terms of accuracy on CIFAR-10/100 and Street View House\nNumbers (SVHN) while being more robust than their vanilla counterpart against\nadversarial examples. Incidentally, Parseval networks also tend to train faster\nand make a better usage of the full capacity of the networks.\n"
+    ]
+}
